@@ -61,10 +61,20 @@ ul li {
    color: yellow;
 }
 #menu a {
-   color: rgb(223, 8, 8);
+      display: inline-block;
+
+   background-color: blue;
+
+   color: white;
+
+   padding: 15px 30px;
+
+   border-radius: 10px;
+
    text-decoration: none;
-   font-size: 20px;
-    transition: 0.3s;
+
+   transition: 0.3s;
+   font-weight: bold;
 }
 #menu {
 display: flex;
@@ -95,6 +105,11 @@ h2::after {
     color: yellow;
     transform: scale(1.2);
 }   
+#menu a {
+
+   display: inline-block;
+
+}
 table {
    border: 3px solid blue;
 } 
@@ -134,6 +149,50 @@ input {
    text-align: center;
 
 }
+.box {
+
+   width: 200px;
+
+   padding: 30px;
+
+   background-color: rgb(14, 123, 38);
+
+   color: white;
+
+   position: relative;
+
+   animation: move 2s infinite;
+margin-top: 20px;
+}
+@keyframes move {
+
+   from {
+
+      left: 0px;
+
+   }
+
+   to {
+
+      left: 200px;
+
+   }
+
+}
+img {
+    animation: rotate 2s infinite;
+
+}
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
 </style>
     <title> Barashada programing </title>
   </head>
@@ -151,7 +210,7 @@ input {
         <span STYLE="text-decoration: underline"> HAMMI</span></h2>
     <h3>Waa maxay hamigu? </h3> 
 <p>Hamigu waa hawo ku abuuran ruux kastoo aduunka ku dul nool yar iyo waynba </p>
-<p>Waxase muhiima sid4eed hamigaga uga dhigi kartaa mid midho dhal leh waa inaad </P>
+<p>Waxase muhiima sidee hamigaga uga dhigi kartaa mid midho dhal leh waa inaad </P>
 <p>qaada qodobadan hoos ku qoran adigoo 
         raacayo siday ukala mudan yihiin:</p>
         <ol>
@@ -203,6 +262,9 @@ input {
 
 </div>
 
+<div class="box">
+   BOX
+</div>
 
 
 <h1 class="welcome-text">
